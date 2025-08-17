@@ -116,3 +116,4 @@ When modifying theme files in `themes/icarus/`, run `npm run lint` from that dir
 ## 代码中的注释全部使用中文
 ## 编写完代码都需要进行测试，你可以直接使用控制台命令或者编写 python 脚本或者使用浏览器 mcp 调试
 ## 多使用 mcp 服务如 context7:获取某个依赖框架的最新文档信息，puppeteer：调用本地浏览器调试前端网页
+## 超过 3 次解决不了问题请使用tavily-mcp工具联网搜索
