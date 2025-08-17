@@ -6,6 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
+# 设置 GITHUB_TOKEN 权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -14,7 +20,7 @@ jobs:
     - name: Checkout 代码
       uses: actions/checkout@v4
       with:
-        submodules: false  # 不递归克隆子模块
+        submodules: recursive  # 递归克隆子模块
         
     - name: Setup Node.js
       uses: actions/setup-node@v4
