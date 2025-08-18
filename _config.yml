@@ -1,10 +1,16 @@
 title: Hexo
-subtitle: ''
-description: ''
-keywords: null
-author: John Doe
+subtitle: '专业的技术博客'
+description: '分享技术经验、编程技巧和开发心得的个人博客，专注于前端开发、JavaScript、Node.js等技术领域。'
+keywords: 
+  - 技术博客
+  - 前端开发
+  - JavaScript
+  - Node.js
+  - 编程
+  - 开发经验
+author: 博主
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 url: https://zuijiaosy.github.io/blog
 root: /blog/
 permalink: ':year/:month/:day/:title/'
@@ -62,3 +68,50 @@ ignore: null
 theme: icarus
 deploy:
   type: ''
+
+# SEO 优化配置
+# RSS Feed 配置
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+# Sitemap 配置
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+# HTML 压缩配置
+html_minifier:
+  enable: true
+  exclude:
+
+# NoFollow 外链配置
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'zuijiaosy.github.io'
+
+# SEO 优化配置
+seo:
+  # 是否启用 hexo-seo
+  enable: true
+  # 是否压缩 HTML
+  html: true
+  # 是否压缩 CSS
+  css: true  
+  # 是否压缩 JS
+  js: true
+  # 是否生成 schema.org 结构化数据
+  schema: true

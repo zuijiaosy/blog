@@ -48,18 +48,18 @@ head:
         url: 
         # Page cover (og:image) (optional)
         # You should leave this blank for most of the time
-        image: 
+        image: /img/og-image.jpg
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
-        site_name: 
+        site_name: Hexo 技术博客
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: 
+        author: 博主
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
         description: 
         # Twitter card type (twitter:card)
-        twitter_card: 
+        twitter_card: summary_large_image
         # Twitter ID (twitter:creator)
         twitter_id: 
         # Twitter Site (twitter:site)
@@ -84,13 +84,13 @@ head:
         url: 
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: 
+        author: 博主
         # Page publisher (optional)
         # You should leave this blank for most of the time
-        publisher: 
+        publisher: Hexo 技术博客
         # Page publisher logo (optional)
         # You should leave this blank for most of the time
-        publisher_logo: 
+        publisher_logo: /img/logo.svg
         # Page images (optional)
         # You should leave this blank for most of the time
         image: 
@@ -98,9 +98,12 @@ head:
     meta:
         # Meta tag specified in <attribute>=<value> style
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
-        - ''
+        - 'name=viewport;content=width=device-width, initial-scale=1'
+        - 'name=robots;content=index,follow'
+        - 'name=googlebot;content=index,follow'
+        - 'name=theme-color;content=#3273dc'
     # URL or path to the website's RSS atom.xml
-    rss: 
+    rss: /atom.xml 
 # Page top navigation bar configurations
 navbar:
     # Navigation menu items
